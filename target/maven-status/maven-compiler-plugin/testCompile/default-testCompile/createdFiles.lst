@@ -1,0 +1,3 @@
+hooks\AppHooks.class
+steps\RegistrationSteps.class
+runner\PetStoreRunner.class
