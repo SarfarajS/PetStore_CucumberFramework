@@ -47,6 +47,9 @@ public class SignInSteps {
 		if(contentFromPage.contains(expectedContent)) {
 			
 			Assert.assertTrue(true);
+		}else {
+			
+			Assert.assertTrue(false);
 		}
 	
 	}

@@ -9,9 +9,11 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features = {"src\\test\\resources\\AppFeature\\"},
 		
+		//features = {"src\\test\\resources\\AppFeature\\AddToCart.feature"},
+		
 		glue = {"steps","hooks"},
 		
-		plugin = {"pretty"},
+		plugin = {"pretty","html:reports/myreport.html"},
 		
 		publish = true,
 		

@@ -1,2 +1,4 @@
 pages\RegistrationPage.class
+pages\AddToCartPage.class
+pages\SignInPage.class
 qa\DriverFactory.class
