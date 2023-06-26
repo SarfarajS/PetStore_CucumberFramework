@@ -3,6 +3,7 @@ package hooks;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -21,6 +22,8 @@ public class AppHooks {
 		
 		Properties pro = new Properties();
 		
+		//String path = ".\\Config.properties";
+		
 		String path = System.getProperty("user.dir")+"\\Config.properties";
 		
 		FileInputStream fis = new FileInputStream(path);
@@ -34,6 +37,8 @@ public class AppHooks {
 		driver = df.initBrowser(browsername);
 		
 		driver.manage().window().maximize();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 	}
 	

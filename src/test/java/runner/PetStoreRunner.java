@@ -5,7 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = {"src\\test\\resources\\AppFeature\\Registration.feature"},
+		//features = {"src\\test\\resources\\AppFeature\\Registration.feature"},
+		
+		features = {"src\\test\\resources\\AppFeature\\"},
 		
 		glue = {"steps","hooks"},
 		
